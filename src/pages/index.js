@@ -25,6 +25,7 @@ const Index = () => {
     return (
         <div>
             <h1>Contentful Blog</h1>
+
             {data.posts.edges.map(post => {
                 return(
                     <h2><Link to={post.node.slug}>{post.node.title}</Link></h2>
